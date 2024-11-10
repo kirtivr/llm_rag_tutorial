@@ -7,7 +7,7 @@ import bs4
 from langchain_groq import ChatGroq
 from langchain.chains import ConversationalRetrievalChain
 
-TOKEN_FILE = os.path.expanduser('~')
+TOKEN_FILE = os.path.expanduser('~') + '/groq_token_file.txt'
 
 def read_token():
     with open(TOKEN_FILE, "r") as tf:
